@@ -1,5 +1,6 @@
 # Landing Pages de Ventas: Plataforma Principal de Leonardo Bringas.
 
+```
 
 landing-ventas-main/
 │
@@ -14,3 +15,4 @@ landing-ventas-main/
 ├── js/ # Para todos los archivos JavaScript.
 └── main.js # Archivo de lógica y funcionalidades.
 
+```
