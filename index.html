@@ -1,931 +1,833 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>
-      Desarrollo Web Profesional | Landing Pages, Sitios y E-commerce
-    </title>
 
-    <meta
-      name="description"
-      content="Desarrollo web profesional. Landing, Sitios corporativos y E-commerce. Entregas rápidas y enfoque en conversión."
-    />
-    <meta
-      name="keywords"
-      content="desarrollo web, landing pages, sitios corporativos, e-commerce, diseño web, desarrollador freelance, páginas de conversión"
-    />
-    <meta name="author" content="Leonardo Bringas" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0f0f0f" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>
+    Desarrollo Web Profesional | Landing Pages, Sitios y E-commerce
+  </title>
 
-    <meta property="og:title" content="Desarrollo Web Profesional" />
-    <meta
-      property="og:description"
-      content="Landing pages, sitios corporativos y e-commerce hechos para convertir más y verse profesionales."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://leobringasatlife.site/" />
-    <meta
-      property="og:image"
-      content="https://leobringasatlife.site/og-image.jpg"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+  <meta name="description"
+    content="Desarrollo web profesional. Landing, Sitios corporativos y E-commerce. Entregas rápidas y enfoque en conversión." />
+  <meta name="keywords"
+    content="desarrollo web, landing pages, sitios corporativos, e-commerce, diseño web, desarrollador freelance, páginas de conversión" />
+  <meta name="author" content="Leonardo Bringas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#162c4f" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Desarrollo Web Profesional" />
-    <meta
-      name="twitter:description"
-      content="Landing pages, sitios corporativos y e-commerce con diseño moderno y enfoque en conversión."
-    />
-    <meta
-      name="twitter:image"
-      content="https://leobringasatlife.site/og-image.jpg"
-    />
-    <link rel="canonical" href="https://leobringasatlife.site/" />
-    <link rel="icon" href="/assets/img/logo.ico" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-    <link rel="manifest" href="/site.webmanifest" />
+  <meta property="og:title" content="Desarrollo Web Profesional" />
+  <meta property="og:description"
+    content="Landing pages, sitios corporativos y e-commerce hechos para convertir más y verse profesionales." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://leobringasatlife.site/" />
+  <meta property="og:image" content="https://leobringasatlife.site/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-    <!-- Recursos -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Desarrollo Web Profesional" />
+  <meta name="twitter:description"
+    content="Landing pages, sitios corporativos y e-commerce con diseño moderno y enfoque en conversión." />
+  <meta name="twitter:image" content="https://leobringasatlife.site/og-image.jpg" />
+  <link rel="canonical" href="https://leobringasatlife.site/" />
+  <link rel="icon" href="/assets/img/logo.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
+  <!-- Recursos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <!-- Schema Markup (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "LeoBringasAtLife",
+      "alternateName": "Leonardo Bringas",
+      "url": "https://leobringasatlife.site/",
+      "logo": "https://leobringasatlife.site/assets/img/logo.ico",
+      "image": "https://leobringasatlife.site/og-image.jpg",
+      "description": "Desarrollo web profesional especializado en Landing Pages, Sitios Corporativos y E-commerce con enfoque en conversión y SEO.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.6037,
+        "longitude": -58.3816
+      },
+      "telephone": "+5491125417299",
+      "email": "leonardoisaiasbringas34@gmail.com",
+      "priceRange": "$60.000 - $250.000",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://instagram.com/leobringasatlife"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Desarrollo Web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landing Pages"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sitio Web Profesional"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce"
+            }
+          }
+        ]
       }
+    }
+  </script>
+</head>
 
-      html {
-        scroll-behavior: smooth;
-      }
+<body class="bg-white text-gray-800 antialiased">
+  <!-- WhatsApp Flotante -->
+  <a href="https://wa.me/5491125417299?text=Hola%20Leonardo,%20quiero%20consultar%20por%20un%20sitio%20web."
+    target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"
+    class="fixed bottom-6 right-6 z-50 bg-gray-900 text-white p-4 rounded shadow-lg hover:bg-gray-700 transition-all hover:scale-110">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
 
-      /* Menú mobil */
-      #mobileMenu {
-        transition: transform 0.3s ease-in-out;
-      }
+  <!-- HEADER -->
+  <header class="border-b border-gray-200 sticky top-0 bg-white z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="text-xl font-bold">LeoBringasAtLife</div>
 
-      #mobileMenu.hidden {
-        transform: translateX(100%);
-      }
-    </style>
-  </head>
-
-  <body class="bg-white text-gray-800 antialiased">
-    <!-- WhatsApp Flotante -->
-    <a
-      href="https://wa.me/5491125417299?text=Hola%20Leonardo,%20quiero%20consultar%20por%20un%20sitio%20web."
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Contactar por WhatsApp"
-      class="fixed bottom-6 right-6 z-50 bg-gray-900 text-white p-4 rounded shadow-lg hover:bg-gray-700 transition-all hover:scale-110"
-    >
-      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-        />
-      </svg>
-    </a>
-
-    <!-- HEADER -->
-    <header class="border-b border-gray-200 sticky top-0 bg-white z-40">
-      <div
-        class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4"
-      >
-        <div class="text-xl font-bold">LeoBringasAtLife</div>
-
-        <!-- Menú Desktop -->
-        <nav class="hidden md:flex items-center gap-6 text-sm text-gray-700">
-          <a href="#planes" class="hover:text-black transition hover:underline"
-            >Planes</a
-          >
-          <a
-            href="#servicios-adicionales"
-            class="hover:text-black transition hover:underline"
-            >Servicios adicionales</a
-          >
-          <a href="#proceso" class="hover:text-black transition hover:underline"
-            >Proceso</a
-          >
-          <a
-            href="#contacto"
-            class="hover:text-black transition hover:underline"
-            >Contacto</a
-          >
-        </nav>
-
-        <!-- CTA Desktop -->
-        <a
-          href="https://wa.me/5491125417299"
-          class="hidden md:block bg-gray-900 text-white px-4 py-2 rounded text-sm hover:bg-gray-700 transition"
-        >
-          Empieza tu sitio web
+      <!-- Menú Desktop -->
+      <nav class="hidden md:flex items-center gap-6 text-base text-gray-700">
+        <a href="#planes" class="px-3 py-1 rounded-full text-black/70 hover:text-black">
+          Planes
         </a>
+        <a href="#servicios-adicionales" class="px-3 py-1 rounded-full text-black/70 hover:text-black">Servicios
+          adicionales</a>
+        <a href="#proceso" class="px-3 py-1 rounded-full text-black/70 hover:text-black">Proceso</a>
+        <a href="#contacto" class="px-3 py-1 rounded-full text-black/70 hover:text-black">
+          Contacto
+        </a>
+      </nav> <!-- /nav -->
 
-        <!-- Botón hamburguesa Mobile -->
-        <button
-          id="menuToggle"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          class="md:hidden p-2 hover:bg-gray-100 rounded"
-        >
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+      <!-- CTA Desktop -->
+      <a href="https://wa.me/5491125417299"
+        class="hidden md:block px-5 py-2 rounded-full text-sm font-medium border text-black hover:bg-black hover:text-white">
+        Empieza tu sitio web
+      </a>
+
+      <!-- Botón hamburguesa Mobile -->
+      <button id="menuToggle" aria-label="Abrir menú" aria-expanded="false"
+        class="md:hidden p-2 hover:bg-gray-100 rounded">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menú Mobile -->
+    <div id="mobileMenu"
+      class="fixed inset-y-0 right-0 w-64 bg-white shadow-xl transform translate-x-full transition-transform duration-300 md:hidden z-50">
+      <div class="p-6">
+        <button id="menuClose" aria-label="Cerrar menú" class="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-      </div>
+        <!-- Nav Mobile Menú (mismo estilo que desktop) -->
+        <nav class="mt-8 flex flex-col gap-2 text-base">
+          <a href="#planes" class="px-4 py-3 rounded-full text-black/70 hover:text-black transition">
+            Planes
+          </a>
 
-      <!-- Menú Mobile -->
-      <div
-        id="mobileMenu"
-        class="fixed inset-y-0 right-0 w-64 bg-white shadow-xl transform translate-x-full transition-transform duration-300 md:hidden z-50"
-      >
-        <div class="p-6">
-          <button
-            id="menuClose"
-            aria-label="Cerrar menú"
-            class="absolute top-4 right-4 p-2 hover:bg-gray-100 rounded"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+          <a href="#servicios-adicionales" class="px-4 py-3 rounded-full text-black/70 hover:text-black transition">
+            Servicios adicionales
+          </a>
 
-          <nav class="mt-8 flex flex-col gap-4">
-            <a
-              href="#planes"
-              class="text-gray-700 hover:text-black transition py-2"
-              >Planes</a
-            >
-            <a
-              href="#servicios-adicionales"
-              class="text-gray-700 hover:text-black transition py-2"
-              >Servicios adicionales</a
-            >
-            <a
-              href="#proceso"
-              class="text-gray-700 hover:text-black transition py-2"
-              >Proceso</a
-            >
-            <a
-              href="#contacto"
-              class="text-gray-700 hover:text-black transition py-2"
-              >Contacto</a
-            >
+          <a href="#proceso" class="px-4 py-3 rounded-full text-black/70 hover:text-black transition">
+            Proceso
+          </a>
 
-            <a
-              href="https://wa.me/5491125417299"
-              class="mt-4 bg-gray-900 text-white px-4 py-3 rounded text-center hover:bg-gray-700 transition"
-            >
-              Empieza tu sitio web
-            </a>
-          </nav>
-        </div>
-      </div>
+          <a href="#contacto" class="px-4 py-3 rounded-full text-black/70 hover:text-black transition">
+            Contacto
+          </a>
 
-      <!-- Overlay -->
-      <div
-        id="menuOverlay"
-        class="fixed inset-0 bg-black bg-opacity-50 hidden md:hidden z-40"
-      ></div>
-    </header>
-
-    <!-- HERO -->
-    <main>
-      <section class="max-w-6xl mx-auto px-6 py-24 md:py-32">
-        <div class="max-w-3xl">
-          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Impulsá tu presencia online con una web profesional hecha a medida.
-          </h1>
-          <p class="text-xl text-gray-600 mb-8 max-w-xl">
-            Desarrollo de páginas funcionales y estratégicas que convierten
-            visitas en clientes.
-          </p>
-<div class="flex flex-wrap gap-4">
-  <a
-    href="#planes"
-    class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition"
-  >
-    Ver planes y precios
-  </a>
-  <a
-    href="#contacto"
-    class="border border-gray-900 px-6 py-3 rounded text-black"
-  >
-    Contactar
-  </a>
-</div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- BENEFICIOS -->
-      <section class="bg-gray-50 py-16">
-        <div class="max-w-6xl mx-auto px-6">
-          <div class="grid md:grid-cols-3 gap-8">
-            <div>
-              <div class="text-3xl font-bold mb-2">12-15 días</div>
-              <div class="text-gray-600">
-                Entregas rápidas según el proyecto
-              </div>
-            </div>
-            <div>
-              <div class="text-3xl font-bold mb-2">50/50</div>
-              <div class="text-gray-600">Pago: 50% inicio, 50% al entregar</div>
-            </div>
-            <div>
-              <div class="text-3xl font-bold mb-2">100%</div>
-              <div class="text-gray-600">Responsive y optimizado para SEO</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PLANES DETALLADOS  -->
-      <section id="planes" class="bg-gray-50 py-20">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-12">Todos los planes</h2>
-
-          <div class="space-y-6">
-            <!-- Plan 1 -->
-            <div class="bg-white border border-gray-200 rounded p-8">
-              <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold mb-2">Landing Page</h3>
-                  <p class="text-gray-600">
-                    Una página optimizada para conversión
-                  </p>
-                </div>
-                <div class="text-right">
-                  <div class="text-3xl font-bold">$40.000 - $60.000</div>
-                  <div class="text-sm text-gray-500">Entrega: 15-20 días</div>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>• Diseño responsive</div>
-                <div>• Formulario de contacto</div>
-                <div>• Optimización SEO</div>
-                <div>• Integración con redes sociales</div>
-                <div>• Servicios/productos destacados</div>
-                <div>• Call to Action estratégicos</div>
-                <div>• Sección "Acerca de"</div>
-                <div>• Google Maps (si aplica)</div>
-              </div>
-            </div>
-
-            <!-- Plan 2 -->
-            <div class="bg-white border-2 border-gray-900 rounded p-8">
-              <div
-                class="inline-block bg-gray-900 text-white text-xs px-2 py-1 rounded mb-3"
-              >
-                Recomendado
-              </div>
-              <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold mb-2">
-                    Sitio Web (3-5 páginas)
-                  </h3>
-                  <p class="text-gray-600">Web completa para tu negocio</p>
-                </div>
-                <div class="text-right">
-                  <div class="text-3xl font-bold">$60.000 - $90.000</div>
-                  <div class="text-sm text-gray-500">Entrega: 20-30 días</div>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>• Todo lo de Landing Page</div>
-                <div>• Secciones: Inicio, Servicios, Acerca, Contacto</div>
-                <div>• Blog/Noticias opcional</div>
-                <div>• Menú de navegación funcional</div>
-                <div>• Google Analytics integrado</div>
-                <div>• Call to Action en varias secciones</div>
-                <div>• SEO básico en todas las páginas</div>
-                <div>• Diseño consistente con tu marca</div>
-              </div>
-            </div>
-
-            <!-- Plan 3 -->
-            <div class="bg-white border border-gray-200 rounded p-8">
-              <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold mb-2">
-                    Sitio Web Completo (5-7 páginas)
-                  </h3>
-                  <p class="text-gray-600">Solución profesional avanzada</p>
-                </div>
-                <div class="text-right">
-                  <div class="text-3xl font-bold">$130.000 - $180.000</div>
-                  <div class="text-sm text-gray-500">Entrega: 30-45 días</div>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>• Todo lo anterior</div>
-                <div>• Secciones: FAQ, Testimonios, Portfolio</div>
-                <div>• Blog completo con categorías</div>
-                <div>• Formularios avanzados</div>
-                <div>• Marketing tools integradas</div>
-                <div>• Optimización SEO completa</div>
-                <div>• Animaciones y efectos visuales</div>
-                <div>• Cross-browser compatible</div>
-              </div>
-            </div>
-
-            <!-- Plan 4 -->
-            <div class="bg-white border-2 rounded p-8">
-              <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold mb-2">E-commerce</h3>
-                  <p class="text-gray-600">Tienda online completa</p>
-                </div>
-                <div class="text-right">
-                  <div class="text-3xl font-bold">$150.000 - $250.000</div>
-                  <div class="text-sm text-gray-500">Entrega: 45-60 días</div>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>• Configuración completa de tienda</div>
-                <div>• Hasta 500 productos cargados</div>
-                <div>• Métodos de pago integrados</div>
-                <div>• Carrito y checkout funcional</div>
-                <div>• Optimización SEO para productos</div>
-                <div>• Política de privacidad</div>
-                <div>• Integración con redes sociales</div>
-                <div>• Experiencia de usuario optimizada</div>
-              </div>
-            </div>
-
-            <!-- Plan 5 -->
-            <div class="bg-white border border-gray-200 rounded p-8">
-              <div
-                class="flex flex-wrap items-start justify-between gap-4 mb-4"
-              >
-                <div>
-                  <h3 class="text-2xl font-bold mb-2">Blog Completo</h3>
-                  <p class="text-gray-600">
-                    Plataforma de contenido profesional
-                  </p>
-                </div>
-                <div class="text-right">
-                  <div class="text-3xl font-bold">$80.000 - $120.000</div>
-                  <div class="text-sm text-gray-500">Entrega: 20-30 días</div>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
-                <div>• Diseño responsive</div>
-                <div>• Hasta 10 páginas iniciales</div>
-                <div>• Sistema de categorías y etiquetas</div>
-                <div>• Newsletter / suscripción</div>
-                <div>• Optimización SEO</div>
-                <div>• Integración con redes sociales</div>
-                <div>• Experiencia de lectura optimizada</div>
-                <div>• Velocidad de carga optimizada</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVICIOS ADICIONALES -->
-      <section class="max-w-6xl mx-auto px-6 py-20" id="servicios-adicionales">
-        <h2 class="text-3xl font-bold mb-12">Servicios adicionales</h2>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">Mantenimiento Mensual</h3>
-            <div class="text-2xl font-bold mb-3">$15.000 - $20.000/mes</div>
-            <p class="text-sm text-gray-600">
-              Actualizaciones, backups, soporte técnico y monitoreo de
-              seguridad.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">Diseño de Logo</h3>
-            <div class="text-2xl font-bold mb-3">$10.000</div>
-            <p class="text-sm text-gray-600">
-              Logo profesional en formatos vectoriales, PNG, JPG, SVG.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">Carga de Productos</h3>
-            <div class="text-2xl font-bold mb-3">
-              Desde $8.000 (cada 100 productos)
-            </div>
-            <p class="text-sm text-gray-600">
-              Imágenes, descripción, precios y categorías. Ideal para catálogos
-              grandes. Para más de 300 productos, se recomienda importación
-              masiva por CSV.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">Hosting + Dominio</h3>
-            <div class="text-2xl font-bold mb-3">Incluido / +$15.000</div>
-            <p class="text-sm text-gray-600">
-              Primer año incluido según plan. Registro de dominio y hosting
-              optimizado.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded-xl p-6">
-            <h3 class="font-semibold text-lg mb-2">Rediseño de Sitio</h3>
-            <div class="text-2xl font-bold mb-3">30% descuento</div>
-            <p class="text-sm text-gray-600">
-              Actualización de diseño, contenido y optimización sobre precio
-              base.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">
-              Landing Urgente (24-48hs)
-            </h3>
-            <div class="text-2xl font-bold mb-3">+$20.000</div>
-            <p class="text-sm text-gray-600">
-              Entrega express, priorizando desarrollo en máximo 48 horas.
-            </p>
-          </div>
-
-          <div class="border border-gray-200 rounded p-6">
-            <h3 class="font-semibold text-lg mb-2">SEO Avanzado</h3>
-            <div class="text-2xl font-bold mb-3">$15.000</div>
-            <p class="text-sm text-gray-600">
-              Keywords, meta tags, velocidad, sitemap, optimización de títulos y
-              textos y herramientas de seguimiento.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROCESO -->
-      <section id="proceso" class="bg-gray-50 py-20">
-        <div class="max-w-6xl mx-auto px-6">
-          <h2 class="text-3xl font-bold mb-12">Proceso de trabajo</h2>
-
-          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                1
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Contacto inicial</h3>
-              <p class="text-gray-600 text-base">
-                Me contás qué necesitás y definimos los objetivos del proyecto.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                2
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Propuesta</h3>
-              <p class="text-gray-600 text-base">
-                Te envío un plan detallado con alcance, tiempos y costo.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                3
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Anticipo 50%</h3>
-              <p class="text-gray-600 text-base">
-                Confirmamos el proyecto y se habilita el inicio del desarrollo.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                4
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Desarrollo</h3>
-              <p class="text-gray-600 text-base">
-                Diseño y construcción de tu web según lo acordado.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                5
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Revisión</h3>
-              <p class="text-gray-600 text-base">
-                Te muestro el avance y hacemos las correcciones necesarias.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                6
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Pago final 50%</h3>
-              <p class="text-gray-600 text-base">
-                Una vez aprobado, se realiza el saldo final.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                7
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Publicación</h3>
-              <p class="text-gray-600 text-base">
-                Tu sitio queda online, optimizado y funcionando.
-              </p>
-            </div>
-
-            <div>
-              <div
-                class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4"
-              >
-                8
-              </div>
-              <h3 class="font-semibold text-lg mb-2">Soporte</h3>
-              <p class="text-gray-600 text-base">
-                Acompañamiento inicial para resolver dudas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FORMAS DE PAGO  -->
-      <section class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-12">Formas de pago</h2>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 class="font-semibold text-xl mb-4">Condiciones</h3>
-            <div class="space-y-4">
-              <div class="flex gap-4">
-                <div class="text-3xl font-bold text-gray-700">50%</div>
-                <div>
-                  <div class="font-semibold">Al confirmar el proyecto</div>
-                  <div class="text-sm text-gray-600">
-                    Anticipo antes de comenzar
-                  </div>
-                </div>
-              </div>
-              <div class="flex gap-4">
-                <div class="text-3xl font-bold text-gray-700">50%</div>
-                <div>
-                  <div class="font-semibold">Al entregar el proyecto</div>
-                  <div class="text-sm text-gray-600">
-                    Saldo final antes de publicar
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="font-semibold text-xl mb-4">Métodos disponibles</h3>
-            <div class="space-y-3">
-              <div class="border border-gray-200 rounded p-4">
-                <div class="font-semibold">Transferencia bancaria</div>
-              </div>
-              <div class="border border-gray-200 rounded p-4">
-                <div class="font-semibold">Mercado Pago</div>
-              </div>
-              <div class="border border-gray-200 rounded p-4">
-                <div class="font-semibold">Efectivo</div>
-                <div class="text-sm text-gray-600">Solo CABA y alrededores</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA FINAL -->
-      <section class="bg-gray-900 text-white py-20">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-          <h2 class="text-4xl font-bold mb-6">
-            ¿Listo para tu próximo sitio web?
-          </h2>
-          <p class="text-xl text-gray-300 mb-8">
-            Hablemos de tu proyecto. Te respondo en menos de 24 horas.
-          </p>
-          <a
-            href="https://wa.me/5491125417299?text=Hola%20Leo,%20quiero%20consultar%20por%20un%20sitio%20web"
-            class="inline-block bg-white text-gray-900 px-8 py-4 rounded font-semibold hover:bg-gray-100 transition"
-          >
+          <!-- CTA Mobile coherente -->
+          <a href="https://wa.me/5491125417299"
+            class="mt-4 px-4 py-3 rounded-full text-sm font-medium bg-black text-white text-center hover:bg-black/80 transition">
             Empieza tu sitio web
           </a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="menuOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden md:hidden z-40"></div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          Sitios web claros, funcionales y pensados para tu negocio.
+        </h1>
+
+        <p class="text-xl text-gray-600 mb-8 max-w-xl">
+          Sitios claros, rápidos y estratégicos, pensados para convertir
+          visitas en consultas y ventas.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#planes" class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition">
+            Ver planes y precios
+          </a>
+          <a href="#contacto" class="border border-gray-900 px-6 py-3 rounded text-black">
+            Iniciar propuesta
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- CONTACTO -->
-      <section id="contacto" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-12">Contacto</h2>
-
-        <div class="grid md:grid-cols-2 gap-12">
+    <!-- Beneficios -->
+    <section class="bg-white py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 class="font-semibold text-xl mb-6">Hablemos de tu proyecto</h3>
-            <p class="text-gray-600 mb-8">
-              Escribime por cualquiera de estos medios. Respondo rápido y sin
-              compromiso.
+            <div class="text-4xl font-bold">15-30</div>
+            <p class="mt-2 text-sm text-black/60">
+              Días de entrega según alcance
             </p>
+          </div>
 
-            <div class="space-y-6">
-              <div class="flex items-start gap-4">
-                <div class="bg-gray-100 p-3 rounded">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
-                    ></path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="font-semibold mb-1">WhatsApp</div>
-                  <a
-                    href="https://wa.me/5491125417299"
-                    class="text-gray-600 hover:text-black hover:underline"
-                    >+54 11 2541-7299</a
-                  >
-                </div>
-              </div>
+          <div>
+            <div class="text-4xl font-bold">50 / 50</div>
+            <p class="mt-2 text-sm text-black/60">
+              Inicio y cierre del proyecto
+            </p>
+          </div>
 
-              <div class="flex items-start gap-4">
-                <div class="bg-gray-100 p-3 rounded">
-                  <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="font-semibold mb-1">Email</div>
-                  <a
-                    href="mailto:leonardoisaiasbringas34@gmail.com"
-                    class="text-gray-600 hover:text-black break-all hover:underline"
-                    >leonardoisaiasbringas34@gmail.com</a
-                  >
-                </div>
-              </div>
+          <div>
+            <div class="text-4xl font-bold">100%</div>
+            <p class="mt-2 text-sm text-black/60">Responsive y SEO-ready</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="flex items-start gap-4">
-                <div class="bg-gray-100 p-3 rounded">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="font-semibold mb-1">Instagram</div>
-                  <a
-                    href="https://instagram.com/leobringasatlife"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-gray-600 hover:text-black hover:underline"
-                    >@leobringasatlife</a
-                  >
-                </div>
+    <!-- PLANES -->
+    <section id="planes" class="bg-gray-50 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-5">Todos los planes</h2>
+
+        <div class="space-y-6">
+          <!-- Plan 1 -->
+          <div class="bg-white border border-gray-200 rounded p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Landing Pages</h3>
+                <p class="text-gray-600">Optimizada para conversión</p>
               </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-400 line-through">$70.000</div>
+                <div class="text-3xl font-bold">$60.000</div>
+                <div class="text-sm text-gray-500">Entrega: 15-20 días</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>- Copy orientado a conversión</div>
+              <div>- Formulario + CTA estratégicos</div>
+              <div>- SEO básico</div>
+              <div>- Integración con redes sociales</div>
+              <div>- Sección Acerca de</div>
+              <div>- Integración con Google Maps</div>
+              <div>- Optimización de velocidad</div>
+              <div>- Soporte post-lanzamiento por 15 días</div>
+            </div>
+          </div>
+          <!-- /div plan 1 -->
+
+          <!-- Plan 2 -->
+          <div class="bg-white border-2 border-gray-900 rounded p-8 relative">
+            <span class="absolute -top-3 left-6 bg-gray-900 text-white text-xs px-3 py-1 rounded">
+              Recomendado
+            </span>
+
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Sitio Web Profesional</h3>
+                <p class="text-gray-600">3 a 5 páginas</p>
+              </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-400 line-through">$120.000</div>
+                <div class="text-3xl font-bold">$100.000</div>
+                <div class="text-sm text-gray-500">Entrega: 20-30 días</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>- Todo lo del plan anterior</div>
+              <div>- Inicio, Servicios, Acerca, Contacto</div>
+              <div>- Menú de navegación optimizado</div>
+              <div>- Google Analytics</div>
+              <div>- SEO on-page</div>
+              <div>- CTAs en múltiples secciones</div>
+              <div>- Diseño alineado a tu marca</div>
+              <div>- Optimización de velocidad</div>
             </div>
           </div>
 
-          <div class="bg-gray-50 rounded p-8">
-            <h3 class="font-semibold text-xl mb-6">Preguntas frecuentes</h3>
-
-            <div class="space-y-6">
-              <div class="space-y-2">
-                <h3 class="font-semibold text-lg">
-                  ¿Cuánto tarda mi proyecto?
-                </h3>
-                <p class="text-sm text-gray-600 leading-relaxed">
-                  Los tiempos dependen del tipo de proyecto. Una landing page
-                  suele estar lista en unas dos o tres semanas. Un sitio de
-                  varias páginas puede llevar alrededor de tres a cuatro
-                  semanas. Un sitio completo necesita cerca de un mes a mes y
-                  medio. Un e-commerce requiere entre mes y medio y dos meses. Y
-                  un blog bien armado normalmente se termina en unas tres
-                  semanas.
-                </p>
-              </div>
-
+          <!-- Plan 3 -->
+          <div class="bg-white border border-gray-200 rounded p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
-                <div class="font-semibold mb-2">
-                  ¿Incluye hosting y dominio?
-                </div>
-                <div class="text-sm text-gray-600">
-                  El primer año puede estar incluido según el plan; en otros,
-                  requiere un costo adicional de $15.000.
-                </div>
+                <h3 class="text-2xl font-bold mb-2">Sitio Web Completo</h3>
+                <p class="text-gray-600">5 a 7 páginas</p>
               </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-400 line-through">$220.000</div>
+                <div class="text-3xl font-bold">$190.000</div>
+                <div class="text-sm text-gray-500">Entrega: 30–45 días</div>
+              </div>
+            </div>
 
-              <div>
-                <div class="font-semibold mb-2">
-                  ¿Puedo hacer cambios después?
-                </div>
-                <div class="text-sm text-gray-600">
-                  Sí, ofrezco mantenimiento mensual desde $15.000 que incluye
-                  cambios y soporte.
-                </div>
-              </div>
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>- Todo lo anterior</div>
+              <div>- Portfolio, FAQ y Testimonios</div>
+              <div>- Blog estructurado</div>
+              <div>- Formularios avanzados</div>
+              <div>- Animaciones moderadas</div>
+              <div>- SEO</div>
+              <div>- Integración con CRM</div>
+              <div>- Optimización de velocidad</div>
+            </div>
+          </div>
 
+          <!-- Plan 4 -->
+          <div class="bg-white border border-gray-200 rounded p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
-                <div class="font-semibold mb-2">
-                  ¿Trabajás fuera de Buenos Aires?
-                </div>
-                <div class="text-sm text-gray-600">
-                  Sí, trabajo con clientes de todo el país de forma remota.
-                </div>
+                <h3 class="text-2xl font-bold mb-2">E-commerce</h3>
+                <p class="text-gray-600">Tienda online profesional</p>
               </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-400 line-through">$300.000</div>
+                <div class="text-3xl font-bold">$250.000</div>
+                <div class="text-sm text-gray-500">Entrega: 45-60 días</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>- Tienda funcional completa</div>
+              <div>- Hasta 100 productos cargados</div>
+              <div>- Medios de pago integrados</div>
+              <div>- Checkout optimizado</div>
+              <div>- SEO para productos</div>
+              <div>- Gestión de inventario</div>
+              <div>- Google Analytics + Pixel de Facebook</div>
+              <div>- Integración con redes sociales</div>
+            </div>
+          </div>
+
+          <!-- Plan 5 -->
+          <div class="bg-white border border-gray-200 rounded p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Blog Profesional</h3>
+                <p class="text-gray-600">Plataforma de contenido</p>
+              </div>
+              <div class="text-right">
+                <div class="text-sm text-gray-400 line-through">$150.000</div>
+                <div class="text-3xl font-bold">$130.000</div>
+                <div class="text-sm text-gray-500">Entrega: 20-30 días</div>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600">
+              <div>- Diseño editorial responsive</div>
+              <div>- Categorías y etiquetas</div>
+              <div>- Newsletter</div>
+              <div>- SEO optimizado</div>
+              <div>- Performance mejorada</div>
+              <div>- Integración con redes sociales y compartición</div>
+              <div>- Comentarios y sistema de valoraciones</div>
+              <div>- Google Analytics</div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
-        <!-- Marca -->
-        <div>
-          <div class="text-2xl font-bold text-white mb-4">LeoBringasAtLife</div>
-          <p class="text-sm text-gray-400">
-            Desarrollo web profesional: landings, sitios corporativos y tiendas
-            online.
+    <!-- SERVICIOS OPCIONALES -->
+    <section id="servicios-adicionales" class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-4">Servicios opcionales</h2>
+      <p class="text-gray-600 mb-12 max-w-2xl">
+        Estos servicios no son obligatorios. Se contratan únicamente si
+        necesitás acelerar resultados, delegar tareas específicas o mantener
+        tu sitio siempre actualizado y seguro.
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Mantenimiento -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">Mantenimiento mensual</h3>
+          <div class="text-2xl font-bold mb-3">$18.000 / mes</div>
+          <p class="text-sm text-gray-600">
+            Backups automáticos, actualizaciones, monitoreo de seguridad y
+            soporte técnico básico. Recomendado para sitios activos.
           </p>
         </div>
 
-        <!-- Navegación -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Navegación</h3>
-          <ul class="space-y-2 text-sm">
-            <li>
-              <a href="#planes" class="hover:text-white hover:underline"
-                >Planes</a
-              >
-            </li>
-            <li>
-              <a
-                href="#servicios-adicionales"
-                class="hover:text-white hover:underline"
-                >Servicios adicionales</a
-              >
-            </li>
-            <li>
-              <a href="#proceso" class="hover:text-white hover:underline"
-                >Proceso</a
-              >
-            </li>
-            <li>
-              <a href="#contacto" class="hover:text-white hover:underline"
-                >Contacto</a
-              >
-            </li>
-          </ul>
+        <!-- SEO Avanzado -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">SEO avanzado</h3>
+          <div class="text-2xl font-bold mb-3">$15.000</div>
+          <p class="text-sm text-gray-600">
+            Investigación de keywords, meta tags, optimización de velocidad,
+            sitemap, títulos y textos optimizados, más herramientas de
+            seguimiento.
+          </p>
         </div>
 
-        <!-- Contacto -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Contacto</h3>
-          <ul class="space-y-2 text-sm">
-            <li>
-              <a
-                href="https://wa.me/5491125417299"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="hover:text-white hover:underline"
-                >WhatsApp</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:leonardoisaiasbringas34@gmail.com"
-                class="hover:text-white hover:underline"
-                >Email</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/leobringasatlife"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="hover:text-white hover:underline"
-                >Instagram</a
-              >
-            </li>
-          </ul>
+        <!-- Landing Urgente -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">
+            Landing urgente (24–48 hs)
+          </h3>
+          <div class="text-2xl font-bold mb-3">+$20.000</div>
+          <p class="text-sm text-gray-600">
+            Entrega prioritaria con desarrollo acelerado. Disponible solo para
+            Landing Pages. Sujeto a disponibilidad.
+          </p>
         </div>
 
-        <!-- Info -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Información</h3>
-          <ul class="space-y-2 text-sm">
-            <li>Buenos Aires · Argentina</li>
-            <li>Entrega rápida 15-30 días</li>
-            <li>Pagos 50/50</li>
-          </ul>
+        <!-- Carga de Productos -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">Carga de productos</h3>
+          <div class="text-2xl font-bold mb-3">
+            Desde $8.000 cada 100 productos
+          </div>
+          <p class="text-sm text-gray-600">
+            Carga de imágenes, descripciones, precios y categorías. Para más
+            de 300 productos se recomienda importación masiva por CSV.
+          </p>
+        </div>
+
+        <!-- Branding -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">Branding básico</h3>
+          <div class="text-2xl font-bold mb-3">$10.000</div>
+          <p class="text-sm text-gray-600">
+            Logo optimizado para web en formatos SVG, PNG y JPG. No incluye
+            manual de marca.
+          </p>
+        </div>
+
+        <!-- Hosting -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">Hosting + dominio</h3>
+          <div class="text-2xl font-bold mb-3">Incluido / +$15.000</div>
+          <p class="text-sm text-gray-600">
+            Primer año incluido según el plan contratado. Hosting optimizado y
+            registro de dominio a nombre del cliente.
+          </p>
+        </div>
+
+        <!-- Rediseño -->
+        <div class="border border-gray-200 rounded p-6">
+          <h3 class="font-semibold text-lg mb-2">Rediseño de sitio</h3>
+          <div class="text-2xl font-bold mb-3">30% OFF</div>
+          <p class="text-sm text-gray-600">
+            Actualización de diseño, contenido y optimización general sobre el
+            precio base del plan correspondiente.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div
-        class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-500"
-      >
-        © 2025 LeoBringasAtLife.
+    <!-- PROCESO -->
+    <section id="proceso" class="bg-gray-50 py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12">Proceso de trabajo</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Paso 1 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              1
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Contacto inicial</h3>
+            <p class="text-gray-600 text-base">
+              Relevamos necesidades, objetivos y alcance general del proyecto.
+            </p>
+          </div>
+
+          <!-- Paso 2 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              2
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Propuesta</h3>
+            <p class="text-gray-600 text-base">
+              Presento una propuesta clara con alcance definido, plazos y
+              presupuesto.
+            </p>
+          </div>
+
+          <!-- Paso 3 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              3
+            </div>
+            <h3 class="font-semibold text-lg mb-2">
+              Confirmación y anticipo
+            </h3>
+            <p class="text-gray-600 text-base">
+              Con la aprobación de la propuesta se abona el 50% y se agenda el
+              inicio del proyecto.
+            </p>
+          </div>
+
+          <!-- Paso 4 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              4
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Desarrollo</h3>
+            <p class="text-gray-600 text-base">
+              Diseño y desarrollo del sitio conforme al alcance acordado.
+            </p>
+          </div>
+
+          <!-- Paso 5 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              5
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Revisión</h3>
+            <p class="text-gray-600 text-base">
+              Presentación del avance final para revisión y ajustes
+              contemplados.
+            </p>
+          </div>
+
+          <!-- Paso 6 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              6
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Pago final</h3>
+            <p class="text-gray-600 text-base">
+              Una vez aprobado el proyecto se abona el 50% restante.
+            </p>
+          </div>
+
+          <!-- Paso 7 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              7
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Publicación</h3>
+            <p class="text-gray-600 text-base">
+              Publicación del sitio, optimizado y funcionando correctamente.
+            </p>
+          </div>
+
+          <!-- Paso 8 -->
+          <div>
+            <div
+              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              8
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Soporte inicial</h3>
+            <p class="text-gray-600 text-base">
+              Acompañamiento posterior a la entrega para resolver dudas
+              técnicas iniciales.
+            </p>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Para menú mobile -->
-    <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const menuClose = document.getElementById('menuClose');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const menuOverlay = document.getElementById('menuOverlay');
-      const menuLinks = mobileMenu.querySelectorAll('a');
+    <!-- FORMAS DE PAGO -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-12">Formas de pago</h2>
 
-      function openMenu() {
-        mobileMenu.classList.remove('translate-x-full');
-        menuOverlay.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-        menuToggle.setAttribute('aria-expanded', 'true');
-      }
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Condiciones -->
+        <div>
+          <h3 class="font-semibold text-xl mb-4">Condiciones de pago</h3>
 
-      function closeMenu() {
-        mobileMenu.classList.add('translate-x-full');
-        menuOverlay.classList.add('hidden');
-        document.body.style.overflow = '';
-        menuToggle.setAttribute('aria-expanded', 'false');
-      }
+          <div class="space-y-6">
+            <div class="flex gap-4">
+              <div class="text-3xl font-bold text-gray-800">50%</div>
+              <div>
+                <div class="font-semibold">Confirmación del proyecto</div>
+                <div class="text-sm text-gray-600">
+                  Anticipo obligatorio para reservar agenda e iniciar el
+                  desarrollo.
+                </div>
+              </div>
+            </div>
 
-      menuToggle.addEventListener('click', openMenu);
-      menuClose.addEventListener('click', closeMenu);
-      menuOverlay.addEventListener('click', closeMenu);
+            <div class="flex gap-4">
+              <div class="text-3xl font-bold text-gray-800">50%</div>
+              <div>
+                <div class="font-semibold">Entrega final</div>
+                <div class="text-sm text-gray-600">
+                  Pago del saldo previo a la publicación del sitio.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      // Cerrar menú al hacer clic en un link
-      menuLinks.forEach((link) => {
-        link.addEventListener('click', closeMenu);
-      });
+        <!-- Métodos -->
+        <div>
+          <h3 class="font-semibold text-xl mb-4">Métodos de pago</h3>
 
-      // Cerrar con tecla Escape
-      document.addEventListener('keydown', (e) => {
-        if (
-          e.key === 'Escape' &&
-          !mobileMenu.classList.contains('translate-x-full')
-        ) {
-          closeMenu();
-        }
-      });
-    </script>
-  </body>
+          <div class="space-y-3">
+            <div class="border border-gray-200 rounded p-4">
+              <div class="font-semibold">Transferencia bancaria</div>
+              <div class="text-sm text-gray-600">
+                Medio principal de pago.
+              </div>
+            </div>
+
+            <div class="border border-gray-200 rounded p-4">
+              <div class="font-semibold">Mercado Pago</div>
+              <div class="text-sm text-gray-600">
+                Medio alternativo de pago.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="bg-gray-900 text-white py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Iniciemos Tu Proyecto Web</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Si buscás un sitio profesional con proceso claro, plazos definidos y
+          condiciones transparentes, coordinemos una charla inicial.
+        </p>
+        <a href="https://wa.me/5491125417299?text=Hola%20Leo,%20quiero%20iniciar%20un%20proyecto%20web"
+          class="inline-block bg-white text-gray-900 px-8 py-4 rounded font-semibold hover:bg-gray-100 transition">
+          Iniciar Propuesta
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="max-w-6xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-bold mb-12">Contacto</h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- INFO DE CONTACTO -->
+        <div>
+          <h3 class="font-semibold text-xl mb-6">Hablemos de tu proyecto</h3>
+          <p class="text-gray-600 mb-8">
+            Podés contactarme por cualquiera de estos medios. Te respondo en
+            menos de 24 horas.
+          </p>
+
+          <div class="space-y-6">
+            <!-- WhatsApp -->
+            <div class="flex items-start gap-4">
+              <div class="bg-gray-100 p-3 rounded">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">WhatsApp</div>
+                <a href="https://wa.me/5491125417299" class="text-gray-600 hover:text-black hover:underline">+54 11
+                  2541-7299</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start gap-4">
+              <div class="bg-gray-100 p-3 rounded">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Email</div>
+                <a href="mailto:leonardoisaiasbringas34@gmail.com"
+                  class="text-gray-600 hover:text-black hover:underline break-all">leonardoisaiasbringas34@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="flex items-start gap-4">
+              <div class="bg-gray-100 p-3 rounded">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919..." />
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Instagram</div>
+                <a href="https://instagram.com/leobringasatlife" target="_blank" rel="noopener noreferrer"
+                  class="text-gray-600 hover:text-black hover:underline">@leobringasatlife</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="bg-gray-50 rounded p-8">
+          <h3 class="font-semibold text-xl mb-6">Preguntas frecuentes</h3>
+
+          <div class="space-y-6">
+            <div>
+              <div class="font-semibold mb-2">¿Cuánto tarda un proyecto?</div>
+              <p class="text-sm text-gray-600">
+                Depende del tipo de sitio. Una landing page suele demorar
+                entre 2 y 3 semanas. Sitios más completos pueden llevar entre
+                4 y 6 semanas. Los e-commerce requieren más tiempo según
+                complejidad.
+              </p>
+            </div>
+
+            <div>
+              <div class="font-semibold mb-2">
+                ¿Incluye hosting y dominio?
+              </div>
+              <p class="text-sm text-gray-600">
+                El primer año puede estar incluido según el plan. En otros
+                casos, se suma un costo adicional.
+              </p>
+            </div>
+
+            <div>
+              <div class="font-semibold mb-2">
+                ¿Puedo solicitar cambios luego?
+              </div>
+              <p class="text-sm text-gray-600">
+                Sí. Ofrezco mantenimiento mensual que incluye soporte, ajustes
+                y actualizaciones.
+              </p>
+            </div>
+
+            <div>
+              <div class="font-semibold mb-2">
+                ¿Trabajás con clientes de otras provincias?
+              </div>
+              <p class="text-sm text-gray-600">
+                Sí. Trabajo de forma remota con clientes de todo el país.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12 mt-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+      <!-- Marca -->
+      <div>
+        <div class="text-2xl font-bold text-white mb-4">LeoBringasAtLife</div>
+        <p class="text-sm text-gray-400">
+          Desarrollo web profesional: landings, sitios corporativos y tiendas
+          online.
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Navegación</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="#planes" class="hover:text-white hover:underline">Planes</a>
+          </li>
+          <li>
+            <a href="#servicios-adicionales" class="hover:text-white hover:underline">Servicios adicionales</a>
+          </li>
+          <li>
+            <a href="#proceso" class="hover:text-white hover:underline">Proceso</a>
+          </li>
+          <li>
+            <a href="#contacto" class="hover:text-white hover:underline">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Contacto</h3>
+        <ul class="space-y-2 text-sm">
+          <li>
+            <a href="https://wa.me/5491125417299" target="_blank" rel="noopener noreferrer"
+              class="hover:text-white hover:underline">WhatsApp</a>
+          </li>
+          <li>
+            <a href="mailto:leonardoisaiasbringas34@gmail.com" class="hover:text-white hover:underline">Email</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/leobringasatlife" target="_blank" rel="noopener noreferrer"
+              class="hover:text-white hover:underline">Instagram</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Información</h3>
+        <ul class="space-y-2 text-sm">
+          <li>Buenos Aires · Argentina</li>
+          <li>Entrega rápida 15-30 días</li>
+          <li>Pagos 50/50</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/javascript/main.js"></script>
+  <!-- /para el menu mobile -->
+</body>
+
 </html>

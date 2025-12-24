@@ -1,1 +1,16 @@
-/* NO HAY CSS */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Menú mobil */
+#mobileMenu {
+  transition: transform 0.3s ease-in-out;
+}
+
+#mobileMenu.hidden {
+  transform: translateX(100%);
+}
