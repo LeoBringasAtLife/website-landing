@@ -35,78 +35,29 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Recursos -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/global.css" />
-  <!-- Schema Markup (JSON-LD) -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "LeoBringasAtLife",
-      "alternateName": "Leonardo Bringas",
-      "url": "https://leobringasatlife.site/",
-      "logo": "https://leobringasatlife.site/assets/img/logo.ico",
-      "image": "https://leobringasatlife.site/og-image.jpg",
-      "description": "Desarrollo web profesional especializado en Landing Pages, Sitios Corporativos y E-commerce con enfoque en conversión y SEO.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Buenos Aires",
-        "addressCountry": "AR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -34.6037,
-        "longitude": -58.3816
-      },
-      "telephone": "+5491125417299",
-      "email": "leonardoisaiasbringas34@gmail.com",
-      "priceRange": "$60.000 - $250.000",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "20:00"
-      },
-      "sameAs": [
-        "https://instagram.com/leobringasatlife"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de Desarrollo Web",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Landing Pages"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Sitio Web Profesional"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "E-commerce"
-            }
-          }
-        ]
-      }
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
     }
-  </script>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Menú mobil */
+    #mobileMenu {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #mobileMenu.hidden {
+      transform: translateX(100%);
+    }
+  </style>
+
 </head>
 
 <body class="bg-white text-gray-800 antialiased">
@@ -148,7 +99,7 @@
 
       <!-- CTA Desktop -->
       <a href="https://wa.me/5491125417299"
-        class="hidden md:block px-5 py-2 rounded-full text-sm font-medium border text-black hover:bg-black hover:text-white">
+        class="hidden md:block px-5 py-2 rounded-full text-sm font-medium border text-white bg-black">
         Empieza tu sitio web
       </a>
 
@@ -190,7 +141,7 @@
 
           <!-- CTA Mobile coherente -->
           <a href="https://wa.me/5491125417299"
-            class="mt-4 px-4 py-3 rounded-full text-sm font-medium bg-black text-white text-center hover:bg-black/80 transition">
+            class="mt-4 px-4 py-3 rounded-full text-sm font-medium bg-black text-white text-center">
             Empieza tu sitio web
           </a>
         </nav>
@@ -216,10 +167,11 @@
         </p>
 
         <div class="flex flex-wrap gap-4">
-          <a href="#planes" class="bg-gray-900 text-white px-6 py-3 rounded hover:bg-gray-700 transition">
+          <a href="#planes" class="bg-gray-900 text-white px-6 py-3 rounded">
             Ver planes y precios
           </a>
-          <a href="#contacto" class="border border-gray-900 px-6 py-3 rounded text-black">
+          <a href="#contacto"
+            class="border border-gray-500 px-6 py-3 rounded text-black hover:bg-gray-900 hover:text-white hover:border-gray-900 transition">
             Iniciar propuesta
           </a>
         </div>
@@ -231,21 +183,21 @@
       <div class="max-w-6xl mx-auto px-6">
         <div class="grid md:grid-cols-3 gap-8">
           <div>
-            <div class="text-4xl font-bold">15-30</div>
+            <div class="text-4xl font-bold text-red-700">15-30 Días</div>
             <p class="mt-2 text-sm text-black/60">
               Días de entrega según alcance
             </p>
           </div>
 
           <div>
-            <div class="text-4xl font-bold">50 / 50</div>
+            <div class="text-4xl font-bold text-red-700">50/50</div>
             <p class="mt-2 text-sm text-black/60">
               Inicio y cierre del proyecto
             </p>
           </div>
 
           <div>
-            <div class="text-4xl font-bold">100%</div>
+            <div class="text-4xl font-bold text-red-700">100%</div>
             <p class="mt-2 text-sm text-black/60">Responsive y SEO-ready</p>
           </div>
         </div>
@@ -259,7 +211,7 @@
 
         <div class="space-y-6">
           <!-- Plan 1 -->
-          <div class="bg-white border border-gray-200 rounded p-8">
+          <div class="bg-white border border-gray-200 rounded p-8 border-gray-200 hover:border-gray-400 transition">
             <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
                 <span
@@ -292,7 +244,7 @@
           <!-- /div plan 1 -->
 
           <!-- Plan 2 -->
-          <div class="bg-white border-2 border-gray-900 rounded p-8 relative">
+          <div class="bg-white border-2 border-gray-900 rounded p-8 relative hover:border-gray-400 transition">
             <span class="absolute -top-3 left-6 bg-gray-900 text-white text-xs px-3 py-1 rounded">
               Recomendado
             </span>
@@ -328,7 +280,7 @@
           </div>
 
           <!-- Plan 3 -->
-          <div class="bg-white border border-gray-200 rounded p-8">
+          <div class="bg-white border border-gray-200 rounded p-8 hover:border-gray-400 transition">
             <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
                 <span
@@ -349,7 +301,7 @@
 
             <div class="grid md:grid-cols-2 gap-4 text-sm text-gray-600 border-t pt-4">
               <div>- Todo lo anterior</div>
-              <div>- Portfolio, FAQ y Testimonios</div>
+              <div>- FAQ y Testimonios</div>
               <div>- Blog estructurado</div>
               <div>- Formularios avanzados</div>
               <div>- Animaciones moderadas</div>
@@ -360,7 +312,7 @@
           </div>
 
           <!-- Plan 4 -->
-          <div class="bg-white border border-gray-200 rounded p-8">
+          <div class="bg-white border border-gray-200 rounded p-8 hover:border-gray-400 transition">
             <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
                 <span
@@ -392,7 +344,7 @@
           </div>
 
           <!-- Plan 5 -->
-          <div class="bg-white border border-gray-200 rounded p-8">
+          <div class="bg-white border border-gray-200 rounded p-8 hover:border-gray-400 transition">
             <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
               <div>
                 <span
@@ -437,7 +389,7 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Mantenimiento -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">Mantenimiento mensual</h3>
           <div class="text-2xl font-bold mb-3">$18.000 / mes</div>
           <p class="text-sm text-gray-600">
@@ -447,7 +399,7 @@
         </div>
 
         <!-- SEO Avanzado -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">SEO avanzado</h3>
           <div class="text-2xl font-bold mb-3">$15.000</div>
           <p class="text-sm text-gray-600">
@@ -458,7 +410,7 @@
         </div>
 
         <!-- Landing Urgente -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">
             Landing urgente (24–48 hs)
           </h3>
@@ -470,7 +422,7 @@
         </div>
 
         <!-- Carga de Productos -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">Carga de productos</h3>
           <div class="text-2xl font-bold mb-3">
             Desde $8.000 cada 100 productos
@@ -482,7 +434,7 @@
         </div>
 
         <!-- Branding -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">Branding básico</h3>
           <div class="text-2xl font-bold mb-3">$10.000</div>
           <p class="text-sm text-gray-600">
@@ -492,7 +444,7 @@
         </div>
 
         <!-- Hosting -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">Hosting + dominio</h3>
           <div class="text-2xl font-bold mb-3">Incluido / +$15.000</div>
           <p class="text-sm text-gray-600">
@@ -502,7 +454,7 @@
         </div>
 
         <!-- Rediseño -->
-        <div class="border border-gray-200 rounded p-6">
+        <div class="border border-gray-200 rounded p-6 border-gray-300 hover:border-gray-400 transition">
           <h3 class="font-semibold text-lg mb-2">Rediseño de sitio</h3>
           <div class="text-2xl font-bold mb-3">30% OFF</div>
           <p class="text-sm text-gray-600">
@@ -520,9 +472,10 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Paso 1 -->
-          <div>
+          <div class="group cursor-pointer">
+            <!-- Hacer hover de un color rojo-700 en el numero [1] -->
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               1
             </div>
             <h3 class="font-semibold text-lg mb-2">Contacto inicial</h3>
@@ -532,9 +485,9 @@
           </div>
 
           <!-- Paso 2 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               2
             </div>
             <h3 class="font-semibold text-lg mb-2">Propuesta</h3>
@@ -545,9 +498,9 @@
           </div>
 
           <!-- Paso 3 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               3
             </div>
             <h3 class="font-semibold text-lg mb-2">
@@ -560,9 +513,9 @@
           </div>
 
           <!-- Paso 4 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               4
             </div>
             <h3 class="font-semibold text-lg mb-2">Desarrollo</h3>
@@ -572,9 +525,9 @@
           </div>
 
           <!-- Paso 5 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               5
             </div>
             <h3 class="font-semibold text-lg mb-2">Revisión</h3>
@@ -585,9 +538,9 @@
           </div>
 
           <!-- Paso 6 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               6
             </div>
             <h3 class="font-semibold text-lg mb-2">Pago final</h3>
@@ -597,9 +550,9 @@
           </div>
 
           <!-- Paso 7 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               7
             </div>
             <h3 class="font-semibold text-lg mb-2">Publicación</h3>
@@ -609,9 +562,9 @@
           </div>
 
           <!-- Paso 8 -->
-          <div>
+          <div class="group cursor-pointer">
             <div
-              class="bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
+              class="group-hover:bg-red-700 group-hover:text-white bg-gray-900 text-white w-12 h-12 rounded flex items-center justify-center font-bold text-xl mb-4">
               8
             </div>
             <h3 class="font-semibold text-lg mb-2">Soporte inicial</h3>
@@ -868,44 +821,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      // Configuración de confetti navideño
-      const duration = 3 * 1000;
-      const animationEnd = Date.now() + duration;
-      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-      function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-
-      const interval = setInterval(function () {
-        const timeLeft = animationEnd - Date.now();
-
-        if (timeLeft <= 0) {
-          return clearInterval(interval);
-        }
-
-        const particleCount = 50 * (timeLeft / duration);
-        // Colores: Rojo Navideño, Blanco Nieve, Verde Pino
-        const colors = ['#ef4444', '#ffffff', '#16a34a'];
-
-        confetti({
-          ...defaults,
-          particleCount,
-          origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
-          colors: colors
-        });
-        confetti({
-          ...defaults,
-          particleCount,
-          origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
-          colors: colors
-        });
-      }, 250);
-    });
-  </script>
-  <script src="assets/javascript/main.js"></script>
+  <script src="assets/javascript/main.js" defer></script>
 </body>
 
 </html>
